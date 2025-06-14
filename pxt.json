@@ -5,8 +5,7 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*",
-        "pxt-mqlib": "github:xiaoyaochun8/pxt-mqlib#master"
+        "microphone": "*"
     },
     "files": [
         "README.md",
