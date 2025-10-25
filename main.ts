@@ -3,6 +3,49 @@
 * 想了解更详细的信息，请前往 https://makecode.microbit.org/blocks/custom
 */
 
+enum OledPic2 {
+    //% block="人物-海底小纵队队长"
+    P94,
+    //% block="人物-汪汪队天天"
+    P95,
+    //% block="文字-大"
+    Da,
+    //% block="文字-中"
+    Zhong,
+    //% block="文字-小"
+    Xiao,
+    //% block="文字-奇"
+    Qi,
+    //% block="表情-开心"
+    Happy,
+    //% block="表情-伤心"
+    Sad,
+    //% block="表情-睡觉"
+    Sleep,
+    //% block="表情-生气"
+    Angry,
+    //% block="表情-惊讶"
+    Amazed,
+    //% block="人物-小人"
+    P1,
+    //% block="人物-火柴人"
+    P2,
+    //% block="人物-机器人"
+    P3,
+    //% block="人物-海底小纵队队长"
+    P4,
+    //% block="人物-汪汪队天天"
+    P5,
+    //% block="风景-山峰"
+    Pic1,
+    //% block="风景-河流"
+    Pic2,
+    //% block="动物-小仓鼠"
+    a,
+    //% block="动物-b"
+    b,
+}
+
 /**
  * mqOled blocks
  */
@@ -51,9 +94,9 @@ namespace mqlib {
     //% group='oled-人物'
     //% block="oled显示图片hex $oledPic"
     export function oledDrawPicByMM(oledPic: OledPic2): void {
-        if (oledPic == OledPic2.P4) {
+        if (oledPic == OledPic2.P94) {
             mqlib.oledDrawPicBy1024Hex(imOledPerson_P42)
-        } else if (oledPic == OledPic2.P5) {
+        } else if (oledPic == OledPic2.P95) {
             mqlib.oledDrawPicBy1024Hex(imOledPerson_P52)
         }
     }
@@ -61,24 +104,24 @@ namespace mqlib {
     //% subcategory="oled"
     //% group='oled-风景'
     //% block="oled显示图片pixel $oledPic"
-    export function oledDrawPic(oledPic: OledPic): void {
-        if (oledPic == OledPic.Da) {
+    export function oledDrawPic(oledPic: OledPic2): void {
+        if (oledPic == OledPic2.Da) {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Da)
-        } else if (oledPic == OledPic.Zhong) {
+        } else if (oledPic == OledPic2.Zhong) {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Zhong)
-        } else if (oledPic == OledPic.Xiao) {
+        } else if (oledPic == OledPic2.Xiao) {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Xiao)
-        } else if (oledPic == OledPic.Qi) {
+        } else if (oledPic == OledPic2.Qi) {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Qi)
-        } else if (oledPic == OledPic.Happy) {
+        } else if (oledPic == OledPic2.Happy) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Happy)
-        } else if (oledPic == OledPic.Sad) {
+        } else if (oledPic == OledPic2.Sad) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Sad)
-        } else if (oledPic == OledPic.Sleep) {
+        } else if (oledPic == OledPic2.Sleep) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Sleep)
-        } else if (oledPic == OledPic.Angry) {
+        } else if (oledPic == OledPic2.Angry) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Angry)
-        } else if (oledPic == OledPic.Amazed) {
+        } else if (oledPic == OledPic2.Amazed) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Amazed)
         } else if (oledPic == OledPic.P1) {
             mqlib.oledDrawImgWithPixels12864(imOledPerson_P1)
