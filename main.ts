@@ -123,23 +123,23 @@ namespace mqlib {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Angry)
         } else if (oledPic == OledPic2.Amazed) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Amazed)
-        } else if (oledPic == OledPic.P1) {
+        } else if (oledPic == OledPic2.P1) {
             mqlib.oledDrawImgWithPixels12864(imOledPerson_P1)
-        } else if (oledPic == OledPic.P2) {
+        } else if (oledPic == OledPic2.P2) {
             mqlib.oledDrawImgWithPixels12864(imOledPerson_P2)
-        } else if (oledPic == OledPic.P3) {
+        } else if (oledPic == OledPic2.P3) {
             mqlib.oledDrawImgWithPixels12864(imOledPerson_P3)
-        } else if (oledPic == OledPic.P4) {
+        } else if (oledPic == OledPic2.P4) {
             mqlib.oledDrawImgWithPixels12864(imOledPerson_P4)
-        } else if (oledPic == OledPic.P5) {
+        } else if (oledPic == OledPic2.P5) {
             mqlib.oledDrawImgWithPixels12864(imOledPerson_P5)
-        } else if (oledPic == OledPic.Pic1) {
+        } else if (oledPic == OledPic2.Pic1) {
             mqlib.oledDrawImgWithPixels12864(imOledPic_P1)
-        } else if (oledPic == OledPic.Pic2) {
+        } else if (oledPic == OledPic2.Pic2) {
             mqlib.oledDrawImgWithPixels12864(imOledPic_P2)
-        } else if (oledPic == OledPic.a) {
+        } else if (oledPic == OledPic2.a) {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Animala)
-        } else if (oledPic == OledPic.b) {
+        } else if (oledPic == OledPic2.b) {
             mqlib.oledDrawImgWithPixels12864(imOledPic_P2)
         }
     }
