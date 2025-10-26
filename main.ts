@@ -4,18 +4,6 @@
 */
 
 enum OledPic2 {
-    //% block="人物-海底小纵队队长"
-    P94,
-    //% block="人物-汪汪队天天"
-    P95,
-    //% block="文字-大"
-    Da,
-    //% block="文字-中"
-    Zhong,
-    //% block="文字-小"
-    Xiao,
-    //% block="文字-奇"
-    Qi,
     //% block="表情-开心"
     Happy,
     //% block="表情-伤心"
@@ -26,6 +14,18 @@ enum OledPic2 {
     Angry,
     //% block="表情-惊讶"
     Amazed,
+    //% block="文字-大"
+    Da,
+    //% block="文字-中"
+    Zhong,
+    //% block="文字-小"
+    Xiao,
+    //% block="文字-奇"
+    Qi,
+    //% block="人物-海底小纵队队长"
+    P94,
+    //% block="人物-汪汪队天天"
+    P95,
     //% block="人物-小人"
     P1,
     //% block="人物-火柴人"
