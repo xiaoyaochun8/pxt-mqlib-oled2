@@ -5,7 +5,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "pxt-mqlib": "github:xiaoyaochun8/pxt-mqlib#v5.0.1"
     },
     "files": [
         "README.md",
@@ -17,7 +18,7 @@
     ],
     "public": true,
     "targetVersions": {
-        "target": "7.0.61",
+        "target": "8.0.16",
         "targetId": "microbit"
     },
     "supportedTargets": [
