@@ -33,8 +33,6 @@ enum OledPic2 {
     Pic2,
     //% block="动物-小仓鼠"
     a,
-    //% block="动物-b"
-    b,
     //% block="文字-大"
     Da,
     //% block="文字-中"
@@ -130,8 +128,6 @@ namespace mqlib {
             mqlib.oledDrawImgWithPixels12864(imOledPic_P2)
         } else if (oledPic == OledPic2.a) {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Animala)
-        } else if (oledPic == OledPic2.b) {
-            mqlib.oledDrawImgWithPixels12864(imOledPic_P2)
         } else if (oledPic == OledPic2.Da) {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Da)
         } else if (oledPic == OledPic2.Zhong) {
