@@ -90,9 +90,9 @@ namespace mqlib {
         }
     }
     //% subcategory="oled"
-    //% group='oled-人物图片'
-    //% block="oled显示图片hex $oledPic"
-    export function oledDrawPicByMM(oledPic: OledPic2): void {
+    //% group='oled-风景图片'
+    //% block="oled显示图片 $oledPic"
+    export function oledDrawPic(oledPic: OledPic2): void {
         if (oledPic == OledPic2.P94) {
             mqlib.oledDrawPicBy1024Hex(imOledPerson_P42)
         } else if (oledPic == OledPic2.P95) {
