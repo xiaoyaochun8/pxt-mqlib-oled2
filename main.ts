@@ -1,6 +1,5 @@
 /**
-* 使用此文件来定义自定义函数和图形块。
-* 想了解更详细的信息，请前往 https://makecode.microbit.org/blocks/custom
+* 表情、图片、字库
 */
 
 enum OledPic2 {
@@ -14,14 +13,6 @@ enum OledPic2 {
     Angry,
     //% block="表情-惊讶"
     Amazed,
-    //% block="文字-大"
-    Da,
-    //% block="文字-中"
-    Zhong,
-    //% block="文字-小"
-    Xiao,
-    //% block="文字-奇"
-    Qi,
     //% block="人物-海底小纵队队长"
     P94,
     //% block="人物-汪汪队天天"
@@ -44,6 +35,14 @@ enum OledPic2 {
     a,
     //% block="动物-b"
     b,
+    //% block="文字-大"
+    Da,
+    //% block="文字-中"
+    Zhong,
+    //% block="文字-小"
+    Xiao,
+    //% block="文字-奇"
+    Qi,
 }
 
 /**
@@ -105,15 +104,7 @@ namespace mqlib {
     //% group='oled-风景图片'
     //% block="oled显示图片pixel $oledPic"
     export function oledDrawPic(oledPic: OledPic2): void {
-        if (oledPic == OledPic2.Da) {
-            mqlib.oledDrawImgWithPixels12864(imOledChWord_Da)
-        } else if (oledPic == OledPic2.Zhong) {
-            mqlib.oledDrawImgWithPixels12864(imOledChWord_Zhong)
-        } else if (oledPic == OledPic2.Xiao) {
-            mqlib.oledDrawImgWithPixels12864(imOledChWord_Xiao)
-        } else if (oledPic == OledPic2.Qi) {
-            mqlib.oledDrawImgWithPixels12864(imOledChWord_Qi)
-        } else if (oledPic == OledPic2.Happy) {
+        if (oledPic == OledPic2.Happy) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Happy)
         } else if (oledPic == OledPic2.Sad) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Sad)
@@ -141,6 +132,14 @@ namespace mqlib {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Animala)
         } else if (oledPic == OledPic2.b) {
             mqlib.oledDrawImgWithPixels12864(imOledPic_P2)
+        } else if (oledPic == OledPic2.Da) {
+            mqlib.oledDrawImgWithPixels12864(imOledChWord_Da)
+        } else if (oledPic == OledPic2.Zhong) {
+            mqlib.oledDrawImgWithPixels12864(imOledChWord_Zhong)
+        } else if (oledPic == OledPic2.Xiao) {
+            mqlib.oledDrawImgWithPixels12864(imOledChWord_Xiao)
+        } else if (oledPic == OledPic2.Qi) {
+            mqlib.oledDrawImgWithPixels12864(imOledChWord_Qi)
         }
     }
 
@@ -344,66 +343,6 @@ namespace mqlib {
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . # # # # # . . . . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-    `)
-    let imOledChWord_Da = mqlib.oledCharacterPixels12864(`
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . # # # # # # # # # . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . # . # . . . . .
-    . . . . # . . . # . . . .
-    . . . # . . . . . # . . .
-    . . # . . . . . . . # . .
-    . . . . . . . . . . . . .
-    . . . . . . . . . . . . .
-    `)
-    let imOledChWord_Zhong = mqlib.oledCharacterPixels12864(`
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . # # # # # # # # # . .
-    . . # . . . # . . . # . .
-    . . # . . . # . . . # . .
-    . . # # # # # # # # # . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . . . . . . . .
-    `)
-    let imOledChWord_Xiao = mqlib.oledCharacterPixels12864(`
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . . . . # . . . . . .
-    . . . # . . # . . # . . .
-    . . # . . . # . . . # . .
-    . # . . . . # . . . . # .
-    # . . . . . # . . . . . #
-    . . . . . . # . . . . . .
-    . . . # . . # . . . . . .
-    . . . . # . # . . . . . .
-    . . . . . # # . . . . . .
-    `)
-    let imOledChWord_Qi = mqlib.oledCharacterPixels12864(`
-    . . . . . # . . . . . . .
-    . . . # # # # # # . . . .
-    . . . . . # . . . . . . .
-    . . . . # . # . . . . . .
-    . . . # . . . # . . . . .
-    . . . . . . . . . . . . .
-    . # # # # # # # # # # # .
-    . . . . . . . # . . . . .
-    . . # # # . . # . . . . .
-    . . # . # . . # . . . . .
-    . . # # # . . # . . . . .
-    . . . . . . . # . . . . .
-    . . . . . # # # . . . . .
     `)
     let imOledFace_Happy = mqlib.oledCharacterPixels12864(`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -744,6 +683,67 @@ namespace mqlib {
     . . . . . . . . . . . . . . . . . # . . . . . . . . . . . # # # . . . . . . . # . . . . . . . . . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . . . # . . . . . . . . . . . . . # . . . . . . . . # # . . . . . . . . . . . . . . . . . . . . . .
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    `)
+    
+    let imOledChWord_Da = mqlib.oledCharacterPixels12864(`
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . # # # # # # # # # . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . # . # . . . . .
+    . . . . # . . . # . . . .
+    . . . # . . . . . # . . .
+    . . # . . . . . . . # . .
+    . . . . . . . . . . . . .
+    . . . . . . . . . . . . .
+    `)
+    let imOledChWord_Zhong = mqlib.oledCharacterPixels12864(`
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . # # # # # # # # # . .
+    . . # . . . # . . . # . .
+    . . # . . . # . . . # . .
+    . . # # # # # # # # # . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . . . . . . . .
+    `)
+    let imOledChWord_Xiao = mqlib.oledCharacterPixels12864(`
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . . . . # . . . . . .
+    . . . # . . # . . # . . .
+    . . # . . . # . . . # . .
+    . # . . . . # . . . . # .
+    # . . . . . # . . . . . #
+    . . . . . . # . . . . . .
+    . . . # . . # . . . . . .
+    . . . . # . # . . . . . .
+    . . . . . # # . . . . . .
+    `)
+    let imOledChWord_Qi = mqlib.oledCharacterPixels12864(`
+    . . . . . # . . . . . . .
+    . . . # # # # # # . . . .
+    . . . . . # . . . . . . .
+    . . . . # . # . . . . . .
+    . . . # . . . # . . . . .
+    . . . . . . . . . . . . .
+    . # # # # # # # # # # # .
+    . . . . . . . # . . . . .
+    . . # # # . . # . . . . .
+    . . # . # . . # . . . . .
+    . . # # # . . # . . . . .
+    . . . . . . . # . . . . .
+    . . . . . # # # . . . . .
     `)
 
 
