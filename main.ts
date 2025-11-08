@@ -45,26 +45,15 @@ enum OledPic2 {
 //% groups=['oled-风景图片']
 namespace mqlib {
 
-    /**
-     * advance2 ************************************************************************************************************************************************
-     */
-
     //% subcategory="oled"
     //% group='oled-风景图片'
-    //% block="oled显示图片 $oledPic"
+    //% block="oled显示图片pixel $oledPic"
     export function oledDrawPic(oledPic: OledPic2): void {
         if (oledPic == OledPic2.P94) {
             OLED12864_I2C.drawPicBy1024Hex(imOledPerson_P42)
         } else if (oledPic == OledPic2.P95) {
             OLED12864_I2C.drawPicBy1024Hex(imOledPerson_P52)
-        }
-    }
-
-    //% subcategory="oled"
-    //% group='oled-风景图片'
-    //% block="oled显示图片pixel $oledPic"
-    export function oledDrawPic(oledPic: OledPic2): void {
-        if (oledPic == OledPic2.Happy) {
+        }else if (oledPic == OledPic2.Happy) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Happy)
         } else if (oledPic == OledPic2.Sad) {
             mqlib.oledDrawImgWithPixels12864(imOledFace_Sad)

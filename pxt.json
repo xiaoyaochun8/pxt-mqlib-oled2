@@ -6,7 +6,7 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "pxt-mqlib": "github:xiaoyaochun8/pxt-mqlib#v5.0.1"
+        "pxt-mqlib": "github:xiaoyaochun8/pxt-mqlib#v7.0.0"
     },
     "files": [
         "README.md",
