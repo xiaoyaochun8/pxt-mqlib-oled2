@@ -49,6 +49,7 @@ namespace mqlib {
     //% group='oled-风景图片'
     //% block="oled显示图片pixel $oledPic"
     export function oledDrawPic(oledPic: OledPic2): void {
+        OLED12864_I2C.clear();
         if (oledPic == OledPic2.P94) {
             OLED12864_I2C.drawByArr1024(imOledPerson_P42)
         } else if (oledPic == OledPic2.P95) {
@@ -84,6 +85,7 @@ namespace mqlib {
         } else if (oledPic == OledPic2.Qi) {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Qi)
         }
+        OLED12864_I2C.draw();
     }
 
     //汪汪队天天2
