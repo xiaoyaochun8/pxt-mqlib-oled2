@@ -2,42 +2,42 @@
 * 表情、图片、字库
 */
 
-enum OledPic2 {
-    //% block="表情-开心"
-    Happy,
-    //% block="表情-伤心"
-    Sad,
-    //% block="表情-睡觉"
-    Sleep,
-    //% block="表情-生气"
-    Angry,
-    //% block="表情-惊讶"
-    Amazed,
-    //% block="人物-海底小纵队队长2"
-    P94,
-    //% block="人物-汪汪队天天2"
-    P95,
-    //% block="动物-小仓鼠"
-    a,
-    //% block="人物-小人"
-    P1,
-    //% block="人物-火柴人"
-    P2,
-    //% block="人物-机器人"
-    P3,
-    //% block="风景-山峰"
-    Pic1,
-    //% block="风景-河流"
-    Pic2,
-    //% block="文字-奇"
-    Qi,
-}
-
 /**
  * mqOled blocks
  */
 //% groups=['oled-风景图片']
 namespace mqlib {
+
+    enum OledPic2 {
+        //% block="表情-开心"
+        Happy,
+        //% block="表情-伤心"
+        Sad,
+        //% block="表情-睡觉"
+        Sleep,
+        //% block="表情-生气"
+        Angry,
+        //% block="表情-惊讶"
+        Amazed,
+        //% block="人物-海底小纵队队长2"
+        P94,
+        //% block="人物-汪汪队天天2"
+        P95,
+        //% block="动物-小仓鼠"
+        a,
+        //% block="人物-小人"
+        P1,
+        //% block="人物-火柴人"
+        P2,
+        //% block="人物-机器人"
+        P3,
+        //% block="风景-山峰"
+        Pic1,
+        //% block="风景-河流"
+        Pic2,
+        //% block="文字-奇"
+        Qi,
+    }
 
     //% subcategory="oled"
     //% group='oled-风景图片'
