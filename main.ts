@@ -8,7 +8,7 @@
 //% groups=['oled-风景图片']
 namespace mqlib {
 
-    enum OledPic2 {
+    export enum OledPic2 {
         //% block="表情-开心"
         Happy,
         //% block="表情-伤心"
