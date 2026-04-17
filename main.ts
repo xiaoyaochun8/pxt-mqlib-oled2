@@ -73,7 +73,6 @@ namespace mqlib {
         } else if (oledPic == OledPic2.Qi) {
             mqlib.oledDrawImgWithPixels12864(imOledChWord_Qi)
         }
-        OLED12864_I2C.draw();
     }
 
     //汪汪队天天2
