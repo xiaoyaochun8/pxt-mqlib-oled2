@@ -49,29 +49,29 @@ namespace mqlib {
         } else if (oledPic == OledPic2.P95) {
             OLED12864_I2C.drawByArr1024(imOledPerson_P52)
         }else if (oledPic == OledPic2.Happy) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledFace_Happy)
+            OLED12864_I2C.drawImgWithPixels12864(imOledFace_Happy)
         } else if (oledPic == OledPic2.Sad) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledFace_Sad)
+            OLED12864_I2C.drawImgWithPixels12864(imOledFace_Sad)
         } else if (oledPic == OledPic2.Sleep) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledFace_Sleep)
+            OLED12864_I2C.drawImgWithPixels12864(imOledFace_Sleep)
         } else if (oledPic == OledPic2.Angry) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledFace_Angry)
+            OLED12864_I2C.drawImgWithPixels12864(imOledFace_Angry)
         } else if (oledPic == OledPic2.Amazed) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledFace_Amazed)
+            OLED12864_I2C.drawImgWithPixels12864(imOledFace_Amazed)
         } else if (oledPic == OledPic2.P1) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledPerson_P1)
+            OLED12864_I2C.drawImgWithPixels12864(imOledPerson_P1)
         } else if (oledPic == OledPic2.P2) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledPerson_P2)
+            OLED12864_I2C.drawImgWithPixels12864(imOledPerson_P2)
         } else if (oledPic == OledPic2.P3) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledPerson_P3)
+            OLED12864_I2C.drawImgWithPixels12864(imOledPerson_P3)
         } else if (oledPic == OledPic2.Pic1) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledPic_P1)
+            OLED12864_I2C.drawImgWithPixels12864(imOledPic_P1)
         } else if (oledPic == OledPic2.Pic2) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledPic_P2)
+            OLED12864_I2C.drawImgWithPixels12864(imOledPic_P2)
         } else if (oledPic == OledPic2.a) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledChWord_Animala)
+            OLED12864_I2C.drawImgWithPixels12864(imOledChWord_Animala)
         } else if (oledPic == OledPic2.Qi) {
-            OLED12864_I2C.oledDrawImgWithPixels12864(imOledChWord_Qi)
+            OLED12864_I2C.drawImgWithPixels12864(imOledChWord_Qi)
         }
     }
 
